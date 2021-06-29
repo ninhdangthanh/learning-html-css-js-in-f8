@@ -1,0 +1,256 @@
+/* mobile & tablet */
+.hide-on-pc {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+
+    :root {
+        --header-hight: 90px;
+        --navbar--height : 0px;
+    }
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header__search-history {
+        width: 100%;
+        z-index: 2;
+    }
+
+    .header__cart--list {
+        z-index: 3;
+    }
+
+    .header__cart--list {
+        position: fixed;
+        top: 54px;
+        width: 100%;
+        padding: 0 calc( ( 100% - 644px) /2 ) ;
+    }
+
+    .header__cart--list::before {
+        display: block;
+        content: "";
+        position: absolute;
+        border-style: solid;
+        border-width: 20px;
+        border-color: transparent transparent white transparent;
+        top: -29px;
+        right: 68px;
+        cursor: pointer;
+        z-index: 0;
+    }
+
+    .header {
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .app__content {
+        margin-top: 105px;
+    }
+
+    .header__cart--list-item {
+        max-height: 26vh;
+    }
+    
+/* HEADER SORT BAR */
+
+.header__sort-bar {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    right: 0;
+    height: 46px;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 1;
+}
+
+.header__sort-item {
+    width: 25%;
+    list-style: none;
+    line-height: 46px;
+    text-align: center;
+}
+
+.header__sort-link {
+    color: var(--text-color);
+    width: 25%;
+    font-size: 1.4rem;
+    text-decoration: none;
+    
+}
+
+.header__sort-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 70%;
+    background-color: rgb(124, 121, 121);
+    top: 50%;
+    transform: translateY(-50%);
+    background-clip: content-box;
+}
+
+.header__sort-item:first-child::before {
+    display: none;
+}
+
+    .footer__heading {
+        text-align: center;
+    }
+
+    .footer-item__link {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* tablet */
+
+@media (min-width : 740px) and (max-width: 1023px) {
+
+    .grid__column-2-4 {
+        width: 33.33333%;
+    }
+
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__cart {
+        margin: 0;
+        left: 10px;
+    }
+
+    .on-tablet {
+        display: block;
+    }
+    
+}
+
+/* mobile */
+
+@media (max-width: 739px) {
+
+    .home-product {
+        padding: 0 4px;
+    }
+
+    .footer {
+        padding: 16px 20px ;
+    }
+
+    .grid__column-10 {
+        width: 100%;
+    }
+
+    .grid__column-2 {
+        display: none;
+    }
+
+    .pagination-item {
+        margin: 0;
+    }
+
+    .pagination-item__link {
+        text-decoration: none;
+        color: #939393;
+        line-height: 30px;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: auto;
+        display: block;
+        min-width: 30px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 2px;
+    }
+
+    .grid__column-2-4 {
+        width: 50%;
+    }
+
+    .on-mobile {
+        display: block;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-with-search {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .header__cart--list::before {
+        right: 28px;
+    }
+
+    .header__logo  {
+        margin: 0;
+        position: relative;
+        left: 20px;
+    }
+    
+    .header__cart {
+        margin: 0;
+        
+    }
+
+    .header__search {
+        box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 90px;
+        z-index: 2;
+        height: 46px;
+        padding: 0 20px;
+        animation: searchSideIn linear 0.3s;
+        display: none;
+    }
+
+    .header__search-history {
+        position: fixed;
+        top: 132px;
+        left: 0;
+        right: 0;
+    }
+
+    .header__search-btn {
+        margin-top: 7px;
+    }
+
+    @keyframes searchSideIn {
+        from {
+            opacity: 0;
+            top: 67px;
+        }
+
+        to {
+            opacity: 1;
+            top: 90px;
+        }
+    }
+
+    .footer .grid__column-2-4:last-child {
+        margin: 0 auto;
+    }
+
+    .mobile__footer-white {
+        background-color: white ;
+    }
+
+}

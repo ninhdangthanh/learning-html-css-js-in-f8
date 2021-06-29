@@ -1,0 +1,53 @@
+.grid {
+    width: 100%;
+    display: block;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.col {
+    width: 25%;
+   
+}
+
+.course-item {
+  
+    padding: 8px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: blue;
+    background-color: palegreen;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+} 
+
+body {
+    margin: 0;
+}
+
+/* MOBILE */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    }
+}
+
+/* TABLET */
+
+@media (min-width: 1024px) and (max-width: 1039px) {
+    .wide {
+        width: 984px;
+    }
+}

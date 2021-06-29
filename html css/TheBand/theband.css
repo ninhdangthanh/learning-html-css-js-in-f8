@@ -1,0 +1,491 @@
+/* COLOM */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.text {
+    color: white !important;
+}
+
+.text-center {
+    text-align: center !important   ;
+}
+
+.clear {
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px  !important;
+}
+
+.mt-16 {
+    margin-top: 16px  !important;
+}
+
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+/* COLOM */
+
+/* MAIN */
+
+html {
+    font-family:"Lato", sans-serif;
+    scroll-behavior: smooth;
+}
+
+#main {
+
+}
+/* BEGIN HEADER */
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#nav {
+   display: inline-block;
+}
+
+#nav li {
+    /* display: inline-block; */
+    /* background-color: blueviolet; */
+    height: 46px;
+    margin-right: -5px;
+}
+
+#nav li a {
+    color: white;
+    text-decoration:none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display:  inline-block;
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a {
+    background-color: #ccc ;
+    color: black;
+   
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    top: 100%;
+    left: 0px;
+    display: none;
+
+}
+
+#nav .subnav li {
+    display: block;
+    width: 100%;
+    padding-right: 20px;
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc ;
+    color: black;
+}
+
+#nav li {
+    position: relative;
+    display:  inline-block;
+}
+
+#nav .subnav a {
+    color: black;
+   display: block;
+    text-transform: capitalize;
+    padding-left: 12px;
+    line-height: 38px;
+}
+
+#nav .subnav a:hover {
+    background-color: #ccc ;
+    color: black;
+   
+}
+
+#nav a i {
+    font-size: 16px;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    /* float: right; */
+    line-height: 46px;
+    padding: 0 15px;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .search-btn {
+    float: right;
+}
+
+/* END HEADER */
+
+/* BEGIN SLIDER */
+
+#slider {
+   padding-top: 50%;
+   margin-top: 46px;
+   background-image: url(https://www.w3schools.com/w3images/chicago.jpg);
+   /* background-clip: border-box; */
+    background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   
+}
+
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 32px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}
+
+#slider .text-content .text-decoration {
+    margin: 15px;
+}
+
+/* END SLIDER */
+
+/* BEGIN CONTENT */
+
+#content {
+
+}
+
+#content .text-content {
+    padding: 64px 16px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: inherit;
+}
+
+.text-content1 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#footer .text-content1 {
+    padding-top: 64px;
+} 
+
+.text-content1-1 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 15px;
+    opacity: 0.600.60;
+    font-size: 15px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+#footer .text-content1-1 {
+   padding-bottom: 16px;
+
+}
+    
+.noidung {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 15px;
+}
+
+#content .member-list {
+    overflow: hidden;
+}
+
+#content .member-item {
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+    margin-top: 32px;
+}
+
+#content .member-name {
+    padding: 15px 0px ;
+}
+#content .member-img {
+    width: 154px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+
+/* BEGIN FOOTER */
+
+#footer {
+    background-color: black;
+}
+
+#footer .palace-header {
+    background-color: black;
+    padding-bottom: 64px;
+    width: 766px;
+    margin: 0 auto;
+    
+}
+
+#footer .ticket-list {
+
+}
+
+#footer .ticket-list li {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 11px 16px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+    color: #757575
+
+}
+
+#footer .soldout {
+    background-color: red;
+    color: #fff;
+    padding: 3px;
+    margin-left: 16px;
+}
+
+#footer .ticket-list .three {
+    float: right;
+    background-color: #000;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+#footer .palace-list {
+    /* width: 766px;
+    margin-left: auto;
+    margin-right: auto; */
+    margin-top: 32px;
+    overflow: hidden    ;
+}
+
+#footer .palace-item {
+    float: left;
+    width: 244px ;
+    background-color: #fff;
+
+}
+
+#footer .palace-box {
+    padding: 16px;
+}
+
+#footer .palace-img {
+    width: 100%;
+}
+
+#footer .palace-item1 { 
+
+}
+
+#footer .palace-item2 {
+    margin-left: 17px;
+}
+
+#footer .palace-item3 {
+    margin-left: 17px;
+}
+
+#footer .palace-heading {
+    margin-bottom: 15px;
+}
+
+#footer .palace-time {
+    margin: 15px 0;
+    opacity: 0.60;
+}
+
+#footer .palace-desc {
+    margin: 15px 0;
+    padding-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.5; 
+}
+
+#footer .palace-buy-btn {
+    text-decoration: none;
+    padding: 11px 16px;
+    background-color: black;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+#footer .palace-buy-btn:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+#footer .palace-buybuy {
+    margin-bottom: 16px;
+}
+/* BEGIN FOOTER */
+
+#contact .contact-sum {
+    width: 766px;
+    margin : 0 auto ;
+}
+
+#contact .contact-header {
+    text-align: center;
+    margin-top: 64px;
+}
+
+#contact .contact-header h2 {
+    letter-spacing: 4px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 24px;
+}   
+
+
+#contact .contact-header p {
+    font-size: 15px;
+    line-height: 1.5;  
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    opacity: 0.60;
+    margin-bottom: 15px;
+
+}
+
+.contact-content {
+    margin-top: 48px;
+    margin-bottom: 114px;
+
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+ 
+}
+
+.ti-location-pin {
+line-height: 1.5 !important;
+}
+
+.ti-mobile {
+line-height: 1.5 !important;
+}
+
+.ti-email {
+line-height: 1.5 !important;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(146, 141, 141);
+}
+
+.form-submit-btn {
+    padding: 8px 16px ;
+    background-color: black;
+    color: #fff;
+    float: right;
+    border: black solid;
+    border-radius: 3px;
+}
+
+.form-submit-btn:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+
+}
+
+.powered {
+   margin-bottom: 86px;
+   opacity: 0.5;
+}
+
+.social{
+    margin-top: 72px;
+    line-height: 1.5;
+    opacity: 0.5;
+    margin-bottom: 30px;
+    text-align: center
+}
+
+.social i {
+    padding: 0 2px;
+    font-size: 20px;
+}
